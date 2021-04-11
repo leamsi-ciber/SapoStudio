@@ -1,105 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapo Studio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/sapologo.png" />
 </head>
 <body>
-    <header class="hero">
-        <nav class="nav__hero hero2">
-            <div class="container nav__container">
-                <div class="logo">
-                    <h2 class="logo__name">Sapo Studio<span class="point">.</span></h2>
-                </div>
-                <div class="links">
-                    <a href="index.html" class="link">Inicio</a>
-                    <a href="nosotros.html" class="link link--active">Nosotros</a>
-                    <a href="portafolio.html" class="link">Portafolio</a>
-                    <a href="servicios.html" class="link">Servicios</a>
-                    <a href="clientes.html" class="link">Clientes</a>
-                    <a href="blog.html" class="link">Blog & Vlog</a>
-                    <a href="contacto.html" class="link">Contacto</a>
-                </div>
+    <nav class="nav">
+        <a href="index.html"><img src="img/sapologo.png" alt=""></a>
+    
+    <div class="nav__links" id="navLinks">
+
+        <i class="far fa-window-close" onclick="ocultarMenu()"></i>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="">PORTAFOLIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CLIENTES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACTO</a></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+        
+        </ul>
+
+    </div>
+    <i class="fas fa-bars" onclick="mostrarMenu()"></i>
+    </nav>
+    <section class="sl">
+        <div id="slider" class="my-slider">
+            <div class="item">
+                <img  src="img/bannersapo1.jpg" class="banner">
             </div>
-        </nav>
-
-
-        <section class="container hero__main">  
-            <div class="hero__textos">
-                <h1 class="title">Un Salto de <span class="title--active">Impacto Visual.</span></h1> 
+            <div class="item">
+                <img  src="img/bannersapo2.jpg" class="banner">
             </div>
-            <img src="img/logoPrincipal.jpg" class="mockup">
-        </section>
-    </header>
-
-    <main>
-        <section class="email container container--modifier">
-            <h2 class="subtitle subtitle--modifier">NOSOTROS<span class="point">.</span></h2>
-
-            <p class="copy__section copy__section--modifier">Una marca reside, por encima de todo, en la mente de las personas...</p>
-
-            <p class="copy__section copy__section--modifier">Para crear una marca, darle contenido o para vender un producto, es necesario el diseño de todos y cada uno de los elementos de comunicación. El diseño debe girar en torno a la creatividad, piedra angular de nuestra estrategia.
-                La creatividad no es solo diseño, no es una idea brillante, no es una bonita opción. Ni siquiera, algo que merece un premio. Es todo eso y mucho más. Es algo que funciona y que resuelve un reto. Una forma de encontrar la mejor opción.
-                Por eso, no solo somos ilustradores, diseñadores gráficos, copys, videocreadores, diseñadores de producto, artistas del branding... 
-            </p>
-            <p class="copy__section copy__section--modifier">Ante todo, somos creativos.</p>
- 
-            <div class="check">
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+200</p>
-                        <p class="check__copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+250</p>
-                        <p class="check__copy">Clientes satisfechos</p>
-                    </div>
-                </div>
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+20</p>
-                        <p class="check__copy">Proyectos Estables </p>
-                    </div>
-                </div>
+            <div class="item">
+                <img  src="img/bannersapo3.jpg" class="banner">
             </div>
-        </section>
-    </main>
+            <div class="item">
+                <img  src="img/bannersapo4.jpg" class="banner">
+            </div>
+          </div>
+    </section>
+    <section class="header-sub">
 
-    <footer class="footer">
-        <div class="container footer__caption">
-            <section class="download">
-                <div class="footer__copy">
-                    <p class="copyright">Florangel Zapata &copy; 2020 Todos los derechos reservados</p>
-                </div>
-            </section>
+        <div class="text-box">
+
+            <h1>Sobre Nosotros</h1>
+
         </div>
+    </section>
 
-        <div class="contact">
-            <div class="item__contact">
-                <i class='bx bx-copyright contact__icon' ></i>
-                <h3 class="contact__title">Florangel Zapata</h3>
-            </div>
-            <div class="item__contact">
-                <i class='bx bx-mail-send contact__icon' ></i>
-                <h3 class="contact__title">2018676@itla.edu.do</h3>
-            </div>
-            <div class="item__contact">
-                <i class='bx bxs-edit-location contact__icon' ></i>
-                <h3 class="contact__title">ITLA </h3>
-            </div>
-            <div class="item__contact item__contact--green">
-                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
-                <h3 class="contact__title">Contáctanos</h3>
-            </div>
+
+
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Somos la empresa más completa en la industria, con una <br>amplia gama de 
+            productos y servicios publicitarios. </p>
+
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i> 
+            <i class="fab fa-facebook"></i>           
         </div>
-    </footer>
+        <p>Made by FLORANGEL ZAPATA  <i class="fas fa-copyright"></i></p>
+    </section>
+
+
+
+    <script src="javascript/scripts.js"></script>
 </body>
 </html>

@@ -1,174 +1,207 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapo Studio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="img/sapologo.png" />
 </head>
 <body>
-    <header class="hero">
-        <nav class="nav__hero hero2">
-            <div class="container nav__container">
-                <div class="logo">
-                    <h2 class="logo__name">Sapo Studio<span class="point">.</span></h2>
-                </div>
-                <div class="links">
-                    <a href="index.html" class="link link--active">Inicio</a>
-                    <a href="nosotros.html" class="link">Nosotros</a>
-                    <a href="portafolio.html" class="link">Portafolio</a>
-                    <a href="servicios.html" class="link">Servicios</a>
-                    <a href="clientes.html" class="link">Clientes</a>
-                    <a href="blog.html" class="link">Blog & Vlog</a>
-                    <a href="contacto.html" class="link">Contacto</a>
-                </div>
+    <nav class="nav">
+        <a href="index.html"><img src="img/sapologo.png" alt=""></a>
+    
+    <div class="nav__links" id="navLinks">
+
+        <i class="far fa-window-close" onclick="ocultarMenu()"></i>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="">PORTAFOLIO</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CLIENTES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACTO</a></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+        
+        </ul>
+
+    </div>
+    <i class="fas fa-bars" onclick="mostrarMenu()"></i>
+    </nav>
+    <section class="sl">
+        <div id="slider" class="my-slider">
+            <div class="item">
+                <img  src="img/bannersapo1.jpg" class="banner">
             </div>
-        </nav>
-
-
-        <section class="container hero__main">  
-            <div class="hero__textos">
-                <h1 class="title">Un Salto de <span class="title--active">Impacto Visual.</span></h1> 
-                <p class="copy">Nos encargamos de llevar tu idea al <span class="copy__active">siguiente nivel</span></p>
-                <a href="contacto.html" class="cta">Contáctanos</a>
+            <div class="item">
+                <img  src="img/bannersapo2.jpg" class="banner">
             </div>
-            <img src="img/logoPrincipal.jpg" class="mockup">
-        </section>
-    </header>
-
-    <main>
-        <section class="services">
-            <div class="container">
-                <h2 class="subtitle">Nuestros Servicios<span class="point">.</span></h2>
-                <p class="copy__section">Plasma tus ideas en todos lados</p>
-
-                <article class="container-cards">
-                    <div class="card">
-                        <img src="img/disenografico.png" class="card__img">
-                        <div class="cards__text">
-                            <p class="card__list">Especialistas</p>
-                            <h3 class="card__title">Diseño Gráfico<span class="point">.</span></h3>
-                            <p class="card__copy">No significa crear un dibujo, una imagen, una ilustración, una fotografía. Es algo mas que la suma de todos esos elementos.</p>
-                            <a href="portafolio.html" class="card__button">Explorar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/impresionD.jpg" class="card__img">
-                        <div class="cards__text">
-                            <p class="card__list">Innovadores</p>
-                            <h3 class="card__title">Impresión Digital<span class="point">.</span></h3>
-                            <p class="card__copy">Impresión directa de un archivo digital a papel u otros materiales por diversos medios, siendo el más común la tinta en impresora.</p>
-                            <a href="portafolio.html" class="card__button">Explorar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/serigrafia.jpg" class="card__img">
-                        <div class="cards__text">
-                            <p class="card__list">Creativos</p>
-                            <h3 class="card__title">Serigrafía<span class="point">.</span></h3>
-                            <p class="card__copy">Impresión en el método de reproducción de documentos e imágenes sobre cualquier material, y en transferir una tinta.</p>
-                            <a href="portafolio.html" class="card__button">Explorar</a>
-                        </div>
-                    </div>
-                </article>
+            <div class="item">
+                <img  src="img/bannersapo3.jpg" class="banner">
             </div>
-        </section>
-        <section class="projects container">
-            <h2 class="subtitle">Proyectos Recientes<span class="point">.</span></h2>
-            <p class="copy__section">Hemos Colaborado con Marcas Reconocidas a Nivel Nacional</p>
-            <article class="container-bg">
-                <div class="card">
-                    <div class="cards__text">
-                        <h3 class="card__title">BRANDING<span class="point">.</span></h3>
-                        <p class="card__date">24 de agosto 2020</p>
-                        <p class="card__copy">Llévate tu mejor fotografía de perfil para redes sociales en solo dos sesiones.</p>
-                        <a href="portafolio.html" class="card__button">Explorar Portafolio</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/WebArtboard-8.jpg" class="background__img">
-                    <div class="background__text">
-                        <h3 class="background__title">Emilio Paredes</h3>
-                        <p class="background__copy">La realidad aumentada transformará por completo el branding.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cards__text">
-                        <h3 class="card__title">Diseño Grafico<span class="point">.</span></h3>
-                        <p class="card__date">24 de octubre 2020</p>
-                        <p class="card__copy">Creemos en los nuevos proyectos, creemos en los que quieren relanzar una marca, creemos en los emprendedores.</p>
-                        <a href="portafolio.html" class="card__button">Explorar Portafolio</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/diseno-grafico.jpg" class="background__img">
-                    <div class="background__text">
-                        <h3 class="background__title">Identidad</h3>
-                        <p class="background__copy">La identidad de marca va mucho más allá del logo.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section class="email container container--modifier">
-            <h2 class="subtitle subtitle--modifier">Somos tu mejor opción para adoptar el impacto visual<span class="point">.</span></h2>
-
-            <p class="copy__section copy__section--modifier">El diseño puede ser arte, el diseño puede ser estética, el diseño es tan simple, por eso es tan complicado.</p>
-
-            <div class="check">
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+200</p>
-                        <p class="check__copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+200</p>
-                        <p class="check__copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-                <div class="check__item">
-                    <i class='bx bx-check' ></i>
-                    <div class="check__numbers">
-                        <p class="check__number">+200</p>
-                        <p class="check__copy">Proyectos exitosos</p>
-                    </div>
-                </div>
+            <div class="item">
+                <img  src="img/bannersapo4.jpg" class="banner">
             </div>
-        </section>
-    </main>
+          </div>
+    </section>
+    <section class="header">
 
-    <footer class="footer">
-        <div class="container footer__caption">
-            <section class="download">
-                <div class="footer__copy">
-                    <p class="copyright">Florangel Zapata &copy; 2020 Todos los derechos reservados</p>
-                </div>
-            </section>
+        <div class="text-box">
+
+            <h1 class="text-boxh1">Un Salto de Impacto Visual.</h1>
+            <p>Nos encargamos de llevar tu idea al siguiente nivel</p>
+            <a href="" class="hero-btn">ORDENA AHORA!</a>
+
         </div>
+    </section>
 
-        <div class="contact">
-            <div class="item__contact">
-                <i class='bx bx-copyright contact__icon' ></i>
-                <h3 class="contact__title">Florangel Zapata</h3>
+
+    <section class="servicios">
+        <h1>Servicios</h1>
+        <p>Plasma tus ideas en todos lados</p>
+    <div class="row">
+        <div class="servicios-col">
+            <h3>Diseño Gráfico</h3>
+            <p>No significa crear un dibujo, una imagen, 
+                una ilustración, una fotografía.
+                 Es algo mas que la suma de todos esos 
+                 elementos.</p>
+        </div>
+        <div class="servicios-col">
+            <h3>Impresión Digital</h3>
+            <p>Impresión directa de un archivo digital a papel u otros 
+                materiales por diversos medios, 
+                siendo el más común la tinta en impresora.</p>
+        </div>
+        <div class="servicios-col">
+            <h3>Serigrafía</h3>
+            <p>Impresión en el método de reproducción de 
+                documentos e 
+                imágenes sobre cualquier material, y en transferir una tinta.</p>
+        </div>
+    </div>
+    
+    
+    </section>
+
+    <section class="proyectos">
+        <h1>Proyectos Recientes</h1>
+        <p>Hemos Colaborado con Marcas Reconocidas a Nivel Nacional</p>
+        
+        <div class="row">
+            <div class="proyectos-col">
+                <img src="img/proyecto7.jpg" class="img-proyectos" alt="">
+          
             </div>
-            <div class="item__contact">
-                <i class='bx bx-mail-send contact__icon' ></i>
-                <h3 class="contact__title">20186726@itla.edu.do</h3>
+      
+            <div class="proyectos-col">
+                <img src="img/proyecto5.jpg" class="img-proyectos" alt="">
+           
             </div>
-            <div class="item__contact">
-                <i class='bx bxs-edit-location contact__icon' ></i>
-                <h3 class="contact__title">ITLA </h3>
-            </div>
-            <div class="item__contact item__contact--green">
-                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
-                <h3 class="contact__title">Contáctanos</h3>
+     
+            <div class="proyectos-col">
+                <img src="img/proyecto4.jpg" class="img-proyectos" alt="">
+            
             </div>
         </div>
-    </footer>
+    
+    </section>
+
+
+    <section class="opcion">
+        <h1>Somos tu mejor opción para adoptar el impacto visual</h1>
+        <p>El diseño puede ser arte, el diseño puede ser estética, el diseño es tan simple, <br>por eso es tan complicado</p>
+        <div class="row">
+            <div class="opcion-col">
+                <img src="img/opcion1.jpg" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo quos commodi laboriosam, explicabo amet aut in dicta. Alias illum, possimus commodi dolor earum architecto quasi cum 
+                doloribus accusamus modi!</p>
+            </div>
+            <div class="opcion-col">
+                <img src="img/opcion2.jpg" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo quos commodi laboriosam, explicabo amet aut in dicta. Alias illum, possimus commodi dolor earum architecto quasi cum 
+                doloribus accusamus modi!</p>
+            </div>
+            <div class="opcion-col">
+                <img src="img/opcion3.jpg" alt="">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nemo quos commodi laboriosam, explicabo amet aut in dicta. Alias illum, possimus commodi dolor earum architecto quasi cum 
+                doloribus accusamus modi!</p>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <section class="clientes">
+        <h1>Que Dicen Nuestros Clientes</h1>
+        <p>Cientos de empresas confian en nosotros</p>
+    
+        <div class="row">
+            <div class="clientes-col">
+                <img src="img/user1.jpg" alt="">
+               <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quos
+                     molestiae expedita quis minus animi ipsum, placeat odit quam ratione 
+                     debitis error fugiat?</p>
+                     <h3>Christine Berkley</h3>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+            </div>
+        </div>
+            <div class="clientes-col">
+                <img src="img/user2.jpg" alt="">
+               <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quos
+                     molestiae expedita quis minus animi ipsum, placeat odit quam ratione 
+                     debitis error fugiat?</p>
+
+                     <h3>David Byer</h3>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+           
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="cta">
+        <h1>Enroll for Our Various Online
+             Courses<br>Anywhere World</h1>
+             <a class="hero-btn" href="">CONTACTANOS</a>
+    </section>
+
+
+    <section class="footer">
+        <h4>Sobre Nosotros</h4>
+        <p>Somos la empresa más completa en la industria, con una <br>amplia gama de 
+            productos y servicios publicitarios. </p>
+
+        <div class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i> 
+            <i class="fab fa-facebook"></i>           
+        </div>
+        <p>Made by FLORANGEL ZAPATA  <i class="fas fa-copyright"></i></p>
+    </section>
+
+
+
+    <script src="javascript/scripts.js"></script>
 </body>
 </html>
