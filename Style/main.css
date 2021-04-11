@@ -115,9 +115,29 @@ nav img{
     cursor: pointer;
 }
 
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
 /* Hola Primisss */
 
 .hero-btn:hover{
+    border: 0.5px solid #00b1C9 ;
+    background: #21974e;
+    transition: 1s;
+}
+
+
+.hero-btn2:hover{
     border: 0.5px solid #00b1C9 ;
     background: #21974e;
     transition: 1s;
@@ -202,6 +222,11 @@ p{
 
 .row{
     margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1{
     display: flex;
     justify-content: space-between;
 }
@@ -434,8 +459,8 @@ font-size: 25px;
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 .about-col{
@@ -443,8 +468,24 @@ font-size: 25px;
     padding: 30px 2px;
 }
 
+.about-coll{
+    /* flex-basis: 48%;
+    padding: 45px 2px; */
+    justify-content: center;
+    text-align: center;
+}
+
 .about-col img{
     width: 100%;
+}
+
+.point{
+    color: rgb(3, 73, 12);
+}
+
+
+.sapo{
+    color: #21974e;
 }
 
 /*Slider*/
