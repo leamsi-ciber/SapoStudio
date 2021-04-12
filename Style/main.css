@@ -1,6 +1,9 @@
 /*Colors
 Blue:#00b1C9
 Verde:#21974e
+font-family: 'Dosis', sans-serif;
+
+font-family: 'Open Sans', sans-serif;
 
 
 */
@@ -8,8 +11,7 @@ Verde:#21974e
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -17,11 +19,10 @@ body{
     background:#1A1B1F;
 }
 
+
 .header{
     height: 300px;
     width: 100%;
-    background-position: center;
-    background-size: cover;
     position: relative;
     
 }
@@ -32,15 +33,18 @@ body{
 
 }
 
-.nav{
-   
-   
-}
+
 nav{
     display:flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    background: #1A1B1F;
+    background-size: cover;
+    z-index: 1;
 }
 
 nav img{
@@ -79,6 +83,29 @@ nav img{
     width: 100%;
 
 }
+
+.submenu{
+    position: absolute;
+    background: #1A1B1F;
+    width: 145%;
+    text-align: justify;     
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__links li:hover .submenu{
+    visibility:visible; 
+    opacity: 1;
+}
+
 .text-boxh1{
     color: #21974e;
 }
@@ -115,6 +142,7 @@ nav img{
     cursor: pointer;
 }
 
+
 .hero-btn2{
     display: inline-block;
     text-decoration: none;
@@ -126,6 +154,7 @@ nav img{
     position: relative;
     cursor: pointer;
     margin-top: 15px;
+    
 }
 
 /* Hola Primisss */
@@ -159,6 +188,7 @@ nav .fas{
     .nav__links ul li{
      display: block;
     }
+    
 
     .nav__links {
         position: absolute;
@@ -186,6 +216,10 @@ nav .fas{
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+    }
+    nav{
+        position: sticky;
+        top: 0;
     }
 
     
@@ -456,6 +490,26 @@ font-size: 25px;
     color: #fff;
 }
 
+.header-servicio{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/oneVision/onevison1.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.header-cli{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/clientes1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
 .about-us{
     width: 80%;
     margin: auto;
@@ -487,7 +541,20 @@ font-size: 25px;
 .sapo{
     color: #21974e;
 }
+@media (max-width:700px) {
+    .about-col h1{
+        font-size: 24px;
+       
 
+    }
+    .about-col p{
+        font-size: 14px;
+        
+    }
+    .about-coll h1{
+        font-size: 24px;
+    }
+}
 /*Slider*/
 .my-slider {
     overflow: hidden;
@@ -495,6 +562,7 @@ font-size: 25px;
     border:1px solid #1A1B1F;
     background:#444;
     box-shadow: 1px 1px 15px rgb(24, 23, 23);
+    position: relative;
   }
   .my-slider:hover {
     border:1px solid rgb(26, 22, 22);
